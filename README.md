@@ -33,7 +33,9 @@ pip install -r requirements.txt
 
 Create a .env file inside the backend/ folder:
 
+```bash
 MONGO_URL=mongodb://mongoadmin:secret@localhost:27017
+```
 Then run the backend server:
 
 ```bash
@@ -49,8 +51,10 @@ npm install
 
 Create a .env file inside the frontend/ folder:
 
+```bash
 VITE_APP_API_BASE_URL=http://localhost:8000/api/v1
 VITE_CLERK_PUBLISHABLE_KEY=your-clerk-publishable-key
+```
 
 
 Replace your-clerk-publishable-key with the one from your Clerk.dev dashboard.
