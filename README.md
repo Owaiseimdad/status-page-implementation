@@ -1,13 +1,3 @@
-<p align="center">
-  <img src="https://img.shields.io/github/license/your-org/status-page-app" />
-  <img src="https://img.shields.io/github/repo-size/your-org/status-page-app" />
-  <img src="https://img.shields.io/github/commit-activity/m/your-org/status-page-app" />
-  <img src="https://img.shields.io/github/last-commit/your-org/status-page-app" />
-  <img src="https://img.shields.io/github/languages/top/your-org/status-page-app" />
-  <img src="https://img.shields.io/github/issues/your-org/status-page-app" />
-  <img src="https://img.shields.io/github/issues-pr/your-org/status-page-app" />
-</p>
-
 <h1 align="center"><strong>Status Page App</strong></h1>
 
 <p align="center">A full-stack app to create public status pages, manage logs/incidents, and monitor system updates. Built using React, FastAPI, and MongoDB.</p>
@@ -70,3 +60,17 @@ Now run the development server:
 ```bash
 npm run dev
 ```
+
+Frontend Features:
+
+🔐 Authentication (Clerk)
+
+🧾 Create and manage status pages
+
+🛠 Add logs and incidents to each page
+
+🔗 Public status page view via unique slug
+
+🎨 Built using MUI for UI consistency
+
+🌐 Axios-based NetworkService for all API calls
