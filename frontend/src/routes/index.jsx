@@ -15,6 +15,7 @@ import AppLayout from "../components/app-layout";
 import StatusCreatePage from "../pages/status-page/create";
 import StatusPageDetails from "../pages/status-page/details";
 import SettingsPage from "../pages/settings";
+import PublicStatusPage from "../pages/status-page/public";
 
 const Routes = () => {
   return (
@@ -80,6 +81,9 @@ const Routes = () => {
           </ProtectedRoute>
         }
       />
+
+      {/* Public routes */}
+      <Route path="/status/public/:slug" element={<PublicStatusPage />} />
 
       {/* Catch-All */}
       <Route path="*" element={<NotFound />} />

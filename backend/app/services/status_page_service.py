@@ -57,4 +57,12 @@ class StatusPageService:
 
         result = await db["status_pages"].delete_one({"_id": ObjectId(page_id)})
         return result.deleted_count > 0
+    
+    async def get_status_page_by_slug(self, slug: str):
+        db = get_db()
+        doc = await db["status_pages"].find_one({"slug": slug})
+        if not doc:
+            return None
+        print("All doc values:", doc)
+        return doc
 

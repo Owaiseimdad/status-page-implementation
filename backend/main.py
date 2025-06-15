@@ -2,6 +2,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.status_page import router as status_page_router
+from app.routes.public_page import router as public_page_router
 from app.db.mongo import mongo_instance
 
 app = FastAPI()
@@ -19,6 +20,7 @@ async def startup_db():
     await mongo_instance.connect()
 
 app.include_router(status_page_router, prefix="/api/v1/status-page", tags=["Status Page"])
+app.include_router(public_page_router, prefix="/api/v1/public", tags=["Public Status Page"])
 
 @app.get("/health")
 def health_check():

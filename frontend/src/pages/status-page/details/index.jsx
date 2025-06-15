@@ -29,7 +29,6 @@ const StatusPageDetails = () => {
   const [entryToDelete, setEntryToDelete] = useState(null);
 
   const [deletePageDialogOpen, setDeletePageDialogOpen] = useState(false);
-  const navigate = useNavigate();
 
   const fetchStatusPage = async () => {
     try {
@@ -44,6 +43,17 @@ const StatusPageDetails = () => {
       setLoading(false);
     }
   };
+
+  const publicLink = `${window.location.origin}/status/public/${page?.slug}`;
+
+const handleCopyLink = async () => {
+  try {
+    await navigator.clipboard.writeText(publicLink);
+    setCopied(true);
+  } catch (err) {
+    console.error("Copy failed", err);
+  }
+};
 
   useEffect(() => {
     if (statusPageId) fetchStatusPage();

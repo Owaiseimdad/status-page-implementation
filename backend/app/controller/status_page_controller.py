@@ -20,6 +20,10 @@ class StatusPageController:
     async def handle_delete_log_entry(self, page_id: str, entry_id: str):
         return await self.service.delete_log_entry(page_id, entry_id)
     
-    async def handle_delete_status_page(self, id: str, user_id: str):
+    async def handle_delete_status_page(self, id: str, user_id: str) -> bool:
         return await self.service.delete_status_page(id, user_id)
+    
+    async def handle_get_status_page_by_slug(self, slug: str):
+        return await self.service.get_status_page_by_slug(slug)
+
 
