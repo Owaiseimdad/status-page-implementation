@@ -42,6 +42,10 @@ Then run the backend server:
 uvicorn main:app --reload
 ```
 
+Backend Architecture:
+<img width="1146" alt="Screenshot 2025-06-15 at 1 34 19 PM" src="https://github.com/user-attachments/assets/3c54c0a7-c213-47b9-b79d-19f284647c3f" />
+
+
 ### 💻 3. Frontend Setup (Vite + React + MUI + Clerk)
 
 ```bash
