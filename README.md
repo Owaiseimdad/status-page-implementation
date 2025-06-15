@@ -68,6 +68,11 @@ Now run the development server:
 ```bash
 npm run dev
 ```
+<img width="1431" alt="Screenshot 2025-06-15 at 1 44 47 PM" src="https://github.com/user-attachments/assets/3dd09d16-a446-47e1-967c-bf9e66944574" />
+
+<img width="1436" alt="Screenshot 2025-06-15 at 1 44 55 PM" src="https://github.com/user-attachments/assets/47617c83-c256-4cd5-a0e1-77a69ee0c995" />
+
+<img width="1395" alt="Screenshot 2025-06-15 at 1 45 05 PM" src="https://github.com/user-attachments/assets/e1d4bd5a-35b8-45c2-a504-a5dcda1faf91" />
 
 Frontend Features:
 
