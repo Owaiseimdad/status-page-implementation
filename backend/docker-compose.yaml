@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: status_page_mongodb
+    restart: always
+    ports:
+      - "27018:27018"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=adminpassword
+      - MONGO_INITDB_DATABASE=status_page_db
+    volumes:
+      - mongodb_data:/data/db
+      - ./docker/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+
+volumes:
+  mongodb_data:
+    name: status_page_mongodb_data
